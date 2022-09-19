@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/css/bootstrap.min.css"
+        integrity="sha512-T584yQ/tdRR5QwOpfvDfVQUidzfgc2339Lc8uBDtcp/wYu80d7jwBgAxbyMh0a9YM9F8N3tdErpFI8iaGx6x5g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="./style/main.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="logo">MORENT</div>
+            <div class="header__search">
+                <span></span> <input class="search" type="text" placeholder="Search something here"><span></span>
+                <div class="filter-icon"><img src="./image/filter.png" alt=""></div>
+            </div>
+            <div class="header__icons">
+                <div class="icon"><img src="./image/Vector1.png" alt="Vector"></div>
+                <div class="icon"><img src="./image/Vector.png" alt="Vector"></div>
+                <div class="icon"><img src="./image/Vector3.png" alt="Vector"></div>
+                <div class="user"><img src="./image/Image.png" alt="Vector"></div>
+            </div>
+        </header>
+        <main class="main">
+            <section class="filters" id="filters">
+                <div id="type">
+                    <h3 class="filters__type">T Y P E</h3>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="Sport" id="Sport" checked>
+                        <label class="form-check-label" for="Sport">
+                            <p class="text">Sport <span class="number">(10)</span></p>
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="SUV" id="SUV" checked>
+                        <label class="form-check-label" for="SUV">
+                            <p class="text">SUV <span class="number">(12)</span></p>
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="MPV" id="MPV">
+                        <label class="form-check-label" for="MPV">
+                            <p class="text">MPV <span class="number">(16)</span></p>
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="Sedan" id="Sedan">
+                        <label class="form-check-label" for="Sedan">
+                            <p class="text">Sedan <span class="number">(20)</span></p>
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="Coupe" id="Coupe">
+                        <label class="form-check-label" for="Coupe">
+                            <p class="text">Coupe <span class="number">(14)</span></p>
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="Hatchback" id="Hatchback">
+                        <label class="form-check-label" for="Hatchback">
+                            <p class="text">Hatchback <span class="number">(14)</span></p>
+                        </label>
+                    </div>
+                </div>
+                <div id="capacity">
+                    <h3 class="filters__type">C A P A C I T Y</h3>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="2People" id="2Person" checked>
+                        <label class="form-check-label" for="2Person">
+                            <p class="text">2 Person <span class="number">(10)</span></p>
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="4People" id="4Person">
+                        <label class="form-check-label" for="4Person">
+                            <p class="text">4 Person <span class="number">(14)</span></p>
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="6People" id="More">
+                        <label class="form-check-label" for="More">
+                            <p class="text">6 Person <span class="number">(12)</span></p>
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="8orMore" id="More" checked>
+                        <label class="form-check-label" for="More">
+                            <p class="text">8 or More <span class="number">(16)</span></p>
+                        </label>
+                    </div>
+                </div>
+                <h3 class="filters__type">P R I C E</h3>
+                <div id="priceRange">
+                    <input type="range" class="form-range" id="customRange1">
+                </div>
+                <p class="max-range-price">Max. $100.00</p>
+            </section>
+            <div class="main__content">
+                <div class="wrapper-foto">
+                    <div class="main__foto">
+                        <div class="big-foto">
+                            <p class="title">Sports car with the best design and acceleration</з>
+                            <p class="description">Safety and comfort while driving a
+                                futuristic and elegant sports car</p>
+                            <img class="carImage" src="./image/image 8.png" alt="Car">
+                        </div>
+                        <div class="mini-foto">
+                            <div class="miniBlock active">
+                                <div class="car">
+                                    <img class="image" src="./image/Car.png" alt="Car">
+                                </div>
+                            </div>
+                            <img class="image" src="./image/View.png" alt="View">
+                            <img class="image" src="./image/View3.png" alt="View">
+                        </div>
+                    </div>
+                    <div class="description-car">
+                        <div class="description-car__nameAndLike">
+                            <h1 class="description-car__name">Nissan GT - R</h1>
+                            <img class="description-car__like"
+                                src="./image/VectorRED.png" alt="like">
+                        </div>
+                        <figure class="description-car__stars">
+                            <img src="./image/VectorELOW.png" alt="star">
+                            <img src="./image/VectorELOW.png" alt="star">
+                            <img src="./image/VectorELOW.png" alt="star">
+                            <img src="./image/VectorELOW.png" alt="star">
+                            <img src="./image/Vector4.png" alt="star">
+                            <p>440+ Reviewer</p>
+                        </figure>
+                        <p class="description-car__text">NISMO has become the embodiment of Nissan's outstanding
+                            performance, inspired by the most
+                            unforgiving proving ground, the "race track".</p>
+                        <div class="description-car__propertiesAndValues">
+                            <p>Type Car<span class="description-car__values">Sport</span>Capacity<span
+                                    class="description-car__values">2 Person</span></p>
+                        </div>
+                        <div class="description-car__propertiesAndValues">
+                            <p>Steering<span class="description-car__values">Manual</span>Gasoline<span
+                                    class="description-car__values">70L</span></p>
+                        </div>
+                        <div class="description-car__priceAndBtn">
+                            <div>
+                                <div class="description-car__price">
+                                    <p>$80.00/<span class="days">days</span> </p>
+                                </div>
+                                <div class="oldPice">
+                                    <s class="days">$100.00</s>
+                                </div>
+                            </div>
+                            <button type="button" class="btn btn-primary btn-lg">Rent Now</button>
+                        </div>
+                    </div>
+
+                </div>
+                <section class="reviews">
+                    <div class="reviews__info">
+                        <h2 class="reviews__title">Reviews</h2>
+                        <div class="reviews__namber">13</div>
+                    </div>
+                    <div class="reviews__block">
+                        <div class="user-img">
+                            <img src="./image/Profill2.png" alt="">
+                        </div>
+                        <div class="userInfo">
+                            <div class="user__nameAndStars">
+                                <div class="user__name">
+                                    <h3 class="name">Alex Stanton</h3>
+                                    <p class="profesion">CEO at Bukalapak</p>
+                                </div>
+                                <figure class="description-car__stars">
+                                    <p class="data">21 July 2022</p>
+                                    <img src="./image/VectorELOW.png" alt="star">
+                                    <img src="./image/VectorELOW.png" alt="star">
+                                    <img src="./image/VectorELOW.png" alt="star">
+                                    <img src="./image/VectorELOW.png" alt="star">
+                                    <img src="./image/Vector4.png" alt="star">
+                                </figure>
+                            </div>
+                            <p class="user__reviews">We are very happy with the service from the MORENT App. Morent has
+                                a low price and
+                                also a large variety of cars with good and comfortable facilities. In addition, the
+                                service provided by the officers is also very friendly and very polite.</p>
+                        </div>
+                    </div>
+                    <div class="reviews__block">
+                        <div class="user-img">
+                            <img src="./image/Profill.png" alt="">
+                        </div>
+                        <div class="userInfo">
+                            <div class="user__nameAndStars">
+                                <div class="user__name">
+                                    <h3 class="name">Skylar Dias</h3>
+                                    <p class="profesion">CEO at Amazon</p>
+                                </div>
+                                <figure class="description-car__stars">
+                                    <p class="data">20 July 2022</p>
+                                    <img src="./image/VectorELOW.png" alt="star">
+                                    <img src="./image/VectorELOW.png" alt="star">
+                                    <img src="./image/VectorELOW.png" alt="star">
+                                    <img src="./image/VectorELOW.png" alt="star">
+                                    <img src="./image/Vector4.png" alt="star">
+                                </figure>
+                            </div>
+                            <p class="user__reviews">We are greatly helped by the services of the MORENT
+                                Application. Morent has low prices and also a wide variety of cars with good and
+                                comfortable facilities. In addition, the service provided by the officers is also
+                                very friendly and very polite.</p>
+                        </div>
+
+                    </div>
+                    <div class="showAll">
+                        Show All
+                        <img src="./image/arrow.png" alt="arrow">
+                    </div>
+                </section>
+                <div class="ViewAll">
+                    <p>Recent Car</p>
+                    <p>View All</p>
+                </div>
+                <div id="rood"></div>
+            </div>
+        </main>
+        <footer class="footer">
+            <section class="footer__left">
+                <div class="logo">MORENT</div>
+                <p class="footer__text">Our vision is to provide convenience and help increase your sales business.</p>
+            </section>
+            <section class="footer__right">
+                <article class="footer__info">
+                    <h2 class="footer__list">About</h2>
+                    <p>How it works</p>
+                    <p>Featured</p>
+                    <p>Partnership</p>
+                    <p>Bussiness Relation</p>
+                </article>
+                <article class="footer__info">
+                    <h2 class="footer__list">Community</h2>
+                    <p>Events</p>
+                    <p>Blog</p>
+                    <p>Podcast</p>
+                    <p>Invite a friend</p>
+                </article>
+                <article class="footer__info">
+                    <h2 class="footer__list">Socials</h2>
+                    <p>Discord</p>
+                    <p>Instagram</p>
+                    <p>Twitter</p>
+                    <p>Facebook</p>
+                </article>
+            </section>
+        </footer>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>

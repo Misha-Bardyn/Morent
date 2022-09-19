@@ -1,0 +1,1160 @@
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url(../fonts/static/PlusJakartaSans-Bold.ttf);
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 1440px;
+}
+
+.header {
+  height: 124px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0px 32px 0px 60px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid rgba(195, 212, 233, 0.4);
+}
+
+.header__search {
+  position: relative;
+  margin-right: 408px;
+}
+
+.header__icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.header__icons .icon {
+  padding: 11px;
+  background-position: center;
+  width: 44px;
+  height: 44px;
+  margin-right: 20px;
+  opacity: 0.8;
+  border: 1px solid rgba(195, 212, 233, 0.4);
+  border-radius: 90px;
+}
+
+.header__icons .icon:nth-child(2)::after {
+  position: absolute;
+  content: "";
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  top: 0;
+  left: 93px;
+  background: #ff4423;
+}
+
+.logo {
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 120%;
+  width: 148px;
+  height: 44px;
+  margin-right: 64px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  letter-spacing: 1px;
+  color: #3563e9;
+}
+
+.search {
+  padding-left: 64px;
+  outline: none;
+  width: 492px;
+  height: 44px;
+  border: 1px solid rgba(195, 212, 233, 0.4);
+  border-radius: 70px;
+}
+
+.search + span::after {
+  position: absolute;
+  content: "";
+  top: 10px;
+  left: 20px;
+  width: 24px;
+  height: 24px;
+  background-image: url(../image/search-normal.png);
+  background-repeat: no-repeat;
+  background-size: 24px 24px;
+}
+
+.filter-icon {
+  display: none;
+  width: 48px;
+  height: 48px;
+  border: 1px solid rgba(195, 212, 233, 0.4);
+  border-radius: 10px;
+  padding: 11px;
+}
+
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #f6f7f9;
+}
+
+.filters {
+  width: 360px;
+  padding: 32px;
+  background-color: #ffffff;
+  border-right: 1px solid #f3f5f7;
+}
+
+.filters__type {
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 150%;
+  margin-bottom: 28px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  letter-spacing: 0.02em;
+  color: #94a7cb;
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  -webkit-box-ordinal-group: 1;
+      -ms-flex-order: 0;
+          order: 0;
+  -ms-flex-positive: 0;
+      flex-grow: 0;
+}
+
+.max-range-price {
+  width: 296px;
+  height: 24px;
+  margin-top: 16px;
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 150%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: justify;
+  letter-spacing: -0.02em;
+  color: #3d5278;
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  -ms-flex-positive: 0;
+      flex-grow: 0;
+}
+
+.form-check:not(:nth-last-child(1)) {
+  margin-bottom: 32px;
+}
+
+.form-check:nth-last-child(1) {
+  margin-bottom: 56px;
+}
+
+.form-check-input {
+  width: 20px;
+  height: 20px;
+}
+
+.form-check-label {
+  padding: 3px;
+}
+
+.text {
+  margin-left: 10px;
+  width: 144px;
+  height: 24px;
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 150%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: justify;
+  letter-spacing: -0.02em;
+  color: #3d5278;
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  -ms-flex-positive: 0;
+      flex-grow: 0;
+}
+
+.text .number {
+  margin-left: 10px;
+  color: #90a3bf;
+}
+
+.form-range {
+  width: 269px;
+  height: 12px;
+}
+
+.wrapper-foto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main__content {
+  padding: 32px;
+}
+
+.big-foto {
+  color: #ffffff;
+  max-width: 492px;
+  padding: 24px;
+  height: 360px;
+  margin-right: 32px;
+  background: #3563e9;
+  border-radius: 10px;
+  background-image: url(../image/Rectangle.png);
+  background-size: 75px 120px;
+  background-position: right 10px;
+}
+
+.big-foto .carImage {
+  margin: 0px 56px 0px 32px;
+}
+
+.title {
+  max-width: 372px;
+  height: 76px;
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 120%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  letter-spacing: -0.01em;
+  color: #ffffff;
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  -webkit-box-ordinal-group: 1;
+      -ms-flex-order: 0;
+          order: 0;
+  -ms-flex-positive: 0;
+      flex-grow: 0;
+}
+
+.description {
+  width: 284px;
+  height: 52px;
+  margin: 16px 0px 48px 0px;
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 160%;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  -ms-flex-positive: 0;
+      flex-grow: 0;
+}
+
+.mini-foto {
+  margin-top: 24px;
+  width: 493px;
+  height: 124px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.mini-foto .miniBlock {
+  width: 148px;
+  height: 124px;
+  border-radius: 10px;
+  padding: 8px;
+}
+
+.mini-foto .miniBlock .car {
+  width: 132px;
+  height: 104px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #3563e9;
+  border-radius: 8px;
+  background-image: url(../image/Rectangle.png);
+  background-size: 18.58px 30px;
+}
+
+.mini-foto .miniBlock .car img {
+  width: 116px;
+  height: 36px;
+}
+
+.mini-foto .active {
+  border: 2px solid #3563e9;
+  border-radius: 10px;
+}
+
+.image {
+  width: 148px;
+  height: 124px;
+  border-radius: 10px;
+}
+
+.description-car {
+  width: 492px;
+  height: 508px;
+  padding: 24px;
+  background: #ffffff;
+  border-radius: 10px;
+}
+
+.description-car__nameAndLike {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.description-car__name {
+  width: 220px;
+  height: 40px;
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 140%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #1a202c;
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  -webkit-box-ordinal-group: 1;
+      -ms-flex-order: 0;
+          order: 0;
+  -ms-flex-positive: 0;
+      flex-grow: 0;
+}
+
+.description-car__like {
+  width: 20px;
+  height: 17.8px;
+}
+
+.description-car__stars {
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  letter-spacing: 0.02em;
+  color: #3d5278;
+}
+
+.description-car__stars img {
+  margin-right: 6px;
+}
+
+.description-car__stars p {
+  margin-left: 4px;
+  margin-bottom: 0;
+}
+
+.description-car__text {
+  display: inline-block;
+  width: 444px;
+  height: 120px;
+  margin-top: 34px;
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 200%;
+  letter-spacing: -0.02em;
+  color: #3d5278;
+}
+
+.description-car__propertiesAndValues {
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+  letter-spacing: -0.02em;
+  color: #90a3bf;
+}
+
+.description-car__values {
+  display: inline-block;
+  margin-left: 16px;
+  width: 92px;
+  height: 28px;
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 25px;
+  text-align: right;
+  letter-spacing: -0.02em;
+  color: #3d5278;
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  -ms-flex-positive: 0;
+      flex-grow: 0;
+}
+
+.description-car__priceAndBtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 40px;
+}
+
+.description-car__priceAndBtn .oldPrice {
+  margin-top: 4px;
+}
+
+.description-car__price {
+  width: 200px;
+  height: 32px;
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #1a202c;
+}
+
+.description-car .days {
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #90a3bf;
+}
+
+.description-car .btn {
+  float: right;
+  background: #3563e9;
+  width: 140px;
+  height: 56px;
+  margin-bottom: 24px;
+}
+
+.description-car__values:nth-child(odd) {
+  margin-right: 44px;
+}
+
+.description-car__propertiesAndValues:nth-child(even) {
+  margin-top: 32px;
+}
+
+.reviews {
+  max-width: 1016px;
+  height: 452px;
+  margin: 32px 0px 0px 0px;
+  padding: 24px;
+  background: #ffffff;
+  border-radius: 10px;
+}
+
+.reviews__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 32px;
+}
+
+.reviews__title {
+  width: 80px;
+  height: 28px;
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  letter-spacing: -0.02em;
+  color: #1a202c;
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  -webkit-box-ordinal-group: 1;
+      -ms-flex-order: 0;
+          order: 0;
+  -ms-flex-positive: 0;
+      flex-grow: 0;
+}
+
+.reviews__namber {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0px 20px;
+  gap: 8px;
+  width: 44px;
+  height: 28px;
+  margin-left: 12px;
+  background: #3563e9;
+  color: #ffffff;
+  border-radius: 4px;
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  -ms-flex-positive: 0;
+      flex-grow: 0;
+}
+
+.reviews__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.reviews .showAll {
+  width: 95px;
+  margin: 0 auto;
+  height: 24px;
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  color: #90a3bf;
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  -webkit-box-ordinal-group: 1;
+      -ms-flex-order: 0;
+          order: 0;
+  -ms-flex-positive: 0;
+      flex-grow: 0;
+}
+
+.reviews .showAll img {
+  margin-left: 11px;
+}
+
+.userInfo {
+  margin-left: 16px;
+}
+
+.user__nameAndStars {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.user__nameAndStars .description-car__stars {
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  display: block;
+  letter-spacing: 0.02em;
+  color: #3d5278;
+}
+
+.user__nameAndStars .description-car__stars p {
+  margin-left: 0px;
+  margin-bottom: 0;
+}
+
+.user__reviews {
+  max-width: 869px;
+  height: 56px;
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 200%;
+  letter-spacing: -0.02em;
+  color: #3d5278;
+}
+
+.name {
+  width: 128px;
+  height: 28px;
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #1a202c;
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  -webkit-box-ordinal-group: 1;
+      -ms-flex-order: 0;
+          order: 0;
+  -ms-flex-positive: 0;
+      flex-grow: 0;
+}
+
+.profesion {
+  width: 128px;
+  height: 20px;
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #90a3bf;
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  -ms-flex-positive: 0;
+      flex-grow: 0;
+}
+
+.data {
+  width: 128px;
+  height: 28px;
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: right;
+  color: #90a3bf;
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  -webkit-box-ordinal-group: 1;
+      -ms-flex-order: 0;
+          order: 0;
+  -ms-flex-positive: 0;
+      flex-grow: 0;
+}
+
+.reviews__block:nth-child(even) {
+  margin-bottom: 24px;
+}
+
+.ViewAll {
+  max-width: 1016px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 42px 0px 26px 0px;
+}
+
+.ViewAll p {
+  width: 92px;
+  height: 24px;
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  color: #90a3bf;
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  -webkit-box-ordinal-group: 1;
+      -ms-flex-order: 0;
+          order: 0;
+  -ms-flex-positive: 0;
+      flex-grow: 0;
+}
+
+.cart-Cars {
+  width: 317px;
+  height: 388px;
+  padding: 24px;
+  background: #ffffff;
+  border-radius: 10px;
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  -webkit-box-ordinal-group: 1;
+      -ms-flex-order: 0;
+          order: 0;
+  -ms-flex-positive: 0;
+      flex-grow: 0;
+}
+
+.cart-Cars .miniPriceAndBtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 32px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.cart-Cars .boxPrice .price {
+  width: 128px;
+  height: 44px;
+  margin-bottom: 0px;
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #1a202c;
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  -webkit-box-ordinal-group: 1;
+      -ms-flex-order: 0;
+          order: 0;
+  -ms-flex-positive: 0;
+      flex-grow: 0;
+}
+
+.cart-Cars .boxPrice .days {
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #90a3bf;
+}
+
+.cart-Cars .btn {
+  width: 116px;
+  height: 44px;
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  color: #ffffff;
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  -webkit-box-ordinal-group: 1;
+      -ms-flex-order: 0;
+          order: 0;
+  -ms-flex-positive: 0;
+      flex-grow: 0;
+}
+
+.cart-Cars:nth-child(n + 4) {
+  margin-top: 26px;
+}
+
+.cart-Cars:nth-child(n + 4) .img-car {
+  width: 272px;
+  height: 112px;
+  margin: 22px 0px 38px 0px;
+}
+
+.img-car {
+  margin: 42px 0px;
+  width: 272px;
+}
+
+.header-cart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header-cart_title {
+  width: 135px;
+  height: 24px;
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #1a202c;
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  -webkit-box-ordinal-group: 1;
+      -ms-flex-order: 0;
+          order: 0;
+  -ms-flex-positive: 0;
+      flex-grow: 0;
+}
+
+.header-cart_img {
+  width: 20px;
+  height: 17.8px;
+}
+
+.type-car {
+  width: 128px;
+  height: 20px;
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  display: inline-block;
+  color: #90a3bf;
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  -ms-flex-positive: 0;
+      flex-grow: 0;
+}
+
+.mini-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #90a3bf;
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  -ms-flex-positive: 0;
+      flex-grow: 0;
+}
+
+.icon {
+  width: 21.5px;
+  height: 20.75px;
+}
+
+#rood {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.marg {
+  margin: 0px 32px 0px 32px;
+}
+
+.footer {
+  max-width: 1440px;
+  height: 340px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 80px 60px 60px 60px;
+}
+
+.footer__text {
+  width: 292px;
+  height: 64px;
+  margin-top: 16px;
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 200%;
+  letter-spacing: -0.01em;
+  color: rgba(19, 19, 19, 0.6);
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  -ms-flex-positive: 0;
+      flex-grow: 0;
+}
+
+.footer__right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer__info {
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 120%;
+  color: rgba(19, 19, 19, 0.6);
+  mix-blend-mode: normal;
+}
+
+.footer__list {
+  margin-bottom: 24px;
+  width: 152px;
+  height: 32px;
+  left: 804px;
+  top: 80px;
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 120%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #131313;
+  mix-blend-mode: normal;
+}
+
+.footer__info:nth-child(even) {
+  margin: 0px 60px;
+}
+
+@media screen and (max-width: 460px) {
+  .wrapper {
+    width: 375px;
+  }
+  .header {
+    padding: 32px 23px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    height: 222px;
+  }
+  .header__logo {
+    margin: 30px 0px 24px 0px;
+  }
+  .header__search {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    border-radius: 10px;
+  }
+  .header__search .search {
+    width: 263px;
+    height: 48px;
+    border: 1px solid rgba(195, 212, 233, 0.4);
+    border-radius: 10px;
+    margin-right: 16px;
+  }
+  .header__search .filter-icon {
+    display: block;
+  }
+  .header__icons {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+  }
+  .header__icons .icon {
+    display: none;
+  }
+  .header__icons .user {
+    float: right;
+  }
+  .filters {
+    display: none;
+  }
+  .wrapper-foto {
+    width: 375px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .reviews {
+    width: 327px;
+  }
+  .user__reviews {
+    width: 243px;
+    overflow: hidden;
+  }
+  .footer {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .footer__right {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+/*# sourceMappingURL=main.css.map */
